@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+.slider{
+    margin: 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 50px 0;
+    background: white;
+    mask: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+}
+
+.slider__logos, .slider__logo{
+    display: inline-block;
+    animation: slider 20s infinite linear;
+}
+.slider__logo{
+    animation-direction: reverse;
+}
+
+.slider__logos img{
+    height: 50px;
+    margin: 0 30px;
+}
+
+@keyframes slider {
+    to{
+        transform: translateX(-100%);
+    }
+}
